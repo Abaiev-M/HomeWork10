@@ -1,0 +1,629 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE1C52C92D15A36800E7F5EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1C52BF2D15A36800E7F5EB /* AppDelegate.swift */; };
+		CE1C52CA2D15A36800E7F5EB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1C52C62D15A36800E7F5EB /* SceneDelegate.swift */; };
+		CE1C52CC2D15A36800E7F5EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE1C52C02D15A36800E7F5EB /* Assets.xcassets */; };
+		CE1C52CE2D15A36800E7F5EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE1C52C32D15A36800E7F5EB /* LaunchScreen.storyboard */; };
+		CE1C52CF2D15A36800E7F5EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE1C52C52D15A36800E7F5EB /* Main.storyboard */; };
+		CE1C52D82D15A47400E7F5EB /* Playlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1C52D72D15A47200E7F5EB /* Playlist.swift */; };
+		CE1C52DB2D15A4A400E7F5EB /* UIView+Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1C52DA2D15A4A300E7F5EB /* UIView+Identifier.swift */; };
+		CE1C52DD2D15A4B400E7F5EB /* UIViewController+Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1C52DC2D15A4B300E7F5EB /* UIViewController+Storyboard.swift */; };
+		CE1C52E02D15A4D600E7F5EB /* DataLoaderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1C52DF2D15A4D500E7F5EB /* DataLoaderService.swift */; };
+		CE1C52E42D15A54500E7F5EB /* Playlist.json in Resources */ = {isa = PBXBuildFile; fileRef = CE1C52E32D15A54500E7F5EB /* Playlist.json */; };
+		CE1C53032D15A57200E7F5EB /* PlaylistModesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1C52FC2D15A57200E7F5EB /* PlaylistModesView.swift */; };
+		CE1C53042D15A57200E7F5EB /* PlaylistMoveDeleteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1C53002D15A57200E7F5EB /* PlaylistMoveDeleteView.swift */; };
+		CE1C53052D15A57200E7F5EB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1C52F12D15A57200E7F5EB /* MainViewController.swift */; };
+		CE1C53062D15A57200E7F5EB /* PlaylistDeleteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1C52F82D15A57200E7F5EB /* PlaylistDeleteView.swift */; };
+		CE1C53072D15A57200E7F5EB /* PlaylistByGenreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1C52F42D15A57200E7F5EB /* PlaylistByGenreView.swift */; };
+		CE1C53082D15A57200E7F5EB /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1C52E72D15A57200E7F5EB /* InitialViewController.swift */; };
+		CE1C53092D15A57200E7F5EB /* MainPlaylistModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1C52E92D15A57200E7F5EB /* MainPlaylistModel.swift */; };
+		CE1C530A2D15A57200E7F5EB /* PlaylistDeleteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1C52F72D15A57200E7F5EB /* PlaylistDeleteModel.swift */; };
+		CE1C530B2D15A57200E7F5EB /* PlaylistDeleteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1C52F92D15A57200E7F5EB /* PlaylistDeleteViewController.swift */; };
+		CE1C530C2D15A57200E7F5EB /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1C52F02D15A57200E7F5EB /* MainView.swift */; };
+		CE1C530D2D15A57200E7F5EB /* InitialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1C52E62D15A57200E7F5EB /* InitialView.swift */; };
+		CE1C530E2D15A57200E7F5EB /* PlaylistModesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1C52FB2D15A57200E7F5EB /* PlaylistModesModel.swift */; };
+		CE1C530F2D15A57200E7F5EB /* PlaylistMoveDeleteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1C52FF2D15A57200E7F5EB /* PlaylistMoveDeleteModel.swift */; };
+		CE1C53102D15A57200E7F5EB /* MainPlaylistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1C52EB2D15A57200E7F5EB /* MainPlaylistViewController.swift */; };
+		CE1C53112D15A57200E7F5EB /* InitialModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1C52E52D15A57200E7F5EB /* InitialModel.swift */; };
+		CE1C53122D15A57200E7F5EB /* PlaylistByGenreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1C52F32D15A57200E7F5EB /* PlaylistByGenreModel.swift */; };
+		CE1C53132D15A57200E7F5EB /* TaskItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1C52ED2D15A57200E7F5EB /* TaskItem.swift */; };
+		CE1C53142D15A57200E7F5EB /* PlaylistMoveDeleteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1C53012D15A57200E7F5EB /* PlaylistMoveDeleteViewController.swift */; };
+		CE1C53152D15A57200E7F5EB /* MainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1C52EF2D15A57200E7F5EB /* MainModel.swift */; };
+		CE1C53162D15A57200E7F5EB /* PlaylistModesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1C52FD2D15A57200E7F5EB /* PlaylistModesViewController.swift */; };
+		CE1C53172D15A57200E7F5EB /* MainPlaylistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1C52EA2D15A57200E7F5EB /* MainPlaylistView.swift */; };
+		CE1C53182D15A57200E7F5EB /* PlaylistByGenreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1C52F52D15A57200E7F5EB /* PlaylistByGenreViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CE1C52A72D15A35F00E7F5EB /* HomeWork10UK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeWork10UK.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE1C52BF2D15A36800E7F5EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CE1C52C02D15A36800E7F5EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE1C52C12D15A36800E7F5EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE1C52C22D15A36800E7F5EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CE1C52C42D15A36800E7F5EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CE1C52C62D15A36800E7F5EB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CE1C52D72D15A47200E7F5EB /* Playlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Playlist.swift; sourceTree = "<group>"; };
+		CE1C52DA2D15A4A300E7F5EB /* UIView+Identifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Identifier.swift"; sourceTree = "<group>"; };
+		CE1C52DC2D15A4B300E7F5EB /* UIViewController+Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Storyboard.swift"; sourceTree = "<group>"; };
+		CE1C52DF2D15A4D500E7F5EB /* DataLoaderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoaderService.swift; sourceTree = "<group>"; };
+		CE1C52E32D15A54500E7F5EB /* Playlist.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Playlist.json; sourceTree = "<group>"; };
+		CE1C52E52D15A57200E7F5EB /* InitialModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialModel.swift; sourceTree = "<group>"; };
+		CE1C52E62D15A57200E7F5EB /* InitialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialView.swift; sourceTree = "<group>"; };
+		CE1C52E72D15A57200E7F5EB /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
+		CE1C52E92D15A57200E7F5EB /* MainPlaylistModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPlaylistModel.swift; sourceTree = "<group>"; };
+		CE1C52EA2D15A57200E7F5EB /* MainPlaylistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPlaylistView.swift; sourceTree = "<group>"; };
+		CE1C52EB2D15A57200E7F5EB /* MainPlaylistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPlaylistViewController.swift; sourceTree = "<group>"; };
+		CE1C52ED2D15A57200E7F5EB /* TaskItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskItem.swift; sourceTree = "<group>"; };
+		CE1C52EF2D15A57200E7F5EB /* MainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModel.swift; sourceTree = "<group>"; };
+		CE1C52F02D15A57200E7F5EB /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		CE1C52F12D15A57200E7F5EB /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		CE1C52F32D15A57200E7F5EB /* PlaylistByGenreModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistByGenreModel.swift; sourceTree = "<group>"; };
+		CE1C52F42D15A57200E7F5EB /* PlaylistByGenreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistByGenreView.swift; sourceTree = "<group>"; };
+		CE1C52F52D15A57200E7F5EB /* PlaylistByGenreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistByGenreViewController.swift; sourceTree = "<group>"; };
+		CE1C52F72D15A57200E7F5EB /* PlaylistDeleteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistDeleteModel.swift; sourceTree = "<group>"; };
+		CE1C52F82D15A57200E7F5EB /* PlaylistDeleteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistDeleteView.swift; sourceTree = "<group>"; };
+		CE1C52F92D15A57200E7F5EB /* PlaylistDeleteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistDeleteViewController.swift; sourceTree = "<group>"; };
+		CE1C52FB2D15A57200E7F5EB /* PlaylistModesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistModesModel.swift; sourceTree = "<group>"; };
+		CE1C52FC2D15A57200E7F5EB /* PlaylistModesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistModesView.swift; sourceTree = "<group>"; };
+		CE1C52FD2D15A57200E7F5EB /* PlaylistModesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistModesViewController.swift; sourceTree = "<group>"; };
+		CE1C52FF2D15A57200E7F5EB /* PlaylistMoveDeleteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistMoveDeleteModel.swift; sourceTree = "<group>"; };
+		CE1C53002D15A57200E7F5EB /* PlaylistMoveDeleteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistMoveDeleteView.swift; sourceTree = "<group>"; };
+		CE1C53012D15A57200E7F5EB /* PlaylistMoveDeleteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistMoveDeleteViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE1C52A42D15A35F00E7F5EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CE1C529E2D15A35F00E7F5EB = {
+			isa = PBXGroup;
+			children = (
+				CE1C52C82D15A36800E7F5EB /* HomeWork10UK */,
+				CE1C52A82D15A35F00E7F5EB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CE1C52A82D15A35F00E7F5EB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE1C52A72D15A35F00E7F5EB /* HomeWork10UK.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE1C52C82D15A36800E7F5EB /* HomeWork10UK */ = {
+			isa = PBXGroup;
+			children = (
+				CE1C52D02D15A39D00E7F5EB /* Source */,
+				CE1C52D22D15A3E400E7F5EB /* Resource */,
+			);
+			path = HomeWork10UK;
+			sourceTree = "<group>";
+		};
+		CE1C52D02D15A39D00E7F5EB /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				CE1C52D12D15A3AD00E7F5EB /* AppDelegate */,
+				CE1C52D62D15A46000E7F5EB /* Common */,
+				CE1C52D92D15A49400E7F5EB /* Extension */,
+				CE1C52DE2D15A4CA00E7F5EB /* Service */,
+				CE1C52E12D15A4F300E7F5EB /* Module */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		CE1C52D12D15A3AD00E7F5EB /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				CE1C52BF2D15A36800E7F5EB /* AppDelegate.swift */,
+				CE1C52C62D15A36800E7F5EB /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		CE1C52D22D15A3E400E7F5EB /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				CE1C52E22D15A52E00E7F5EB /* Json */,
+				CE1C52D52D15A43A00E7F5EB /* Asset */,
+				CE1C52D42D15A42600E7F5EB /* Storyboard */,
+				CE1C52D32D15A3F800E7F5EB /* Plist */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		CE1C52D32D15A3F800E7F5EB /* Plist */ = {
+			isa = PBXGroup;
+			children = (
+				CE1C52C12D15A36800E7F5EB /* Info.plist */,
+			);
+			path = Plist;
+			sourceTree = "<group>";
+		};
+		CE1C52D42D15A42600E7F5EB /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				CE1C52C32D15A36800E7F5EB /* LaunchScreen.storyboard */,
+				CE1C52C52D15A36800E7F5EB /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		CE1C52D52D15A43A00E7F5EB /* Asset */ = {
+			isa = PBXGroup;
+			children = (
+				CE1C52C02D15A36800E7F5EB /* Assets.xcassets */,
+			);
+			path = Asset;
+			sourceTree = "<group>";
+		};
+		CE1C52D62D15A46000E7F5EB /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				CE1C52D72D15A47200E7F5EB /* Playlist.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		CE1C52D92D15A49400E7F5EB /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				CE1C52DA2D15A4A300E7F5EB /* UIView+Identifier.swift */,
+				CE1C52DC2D15A4B300E7F5EB /* UIViewController+Storyboard.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		CE1C52DE2D15A4CA00E7F5EB /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				CE1C52DF2D15A4D500E7F5EB /* DataLoaderService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		CE1C52E12D15A4F300E7F5EB /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				CE1C52E82D15A57200E7F5EB /* InitialScreen */,
+				CE1C52EC2D15A57200E7F5EB /* MainPlaylistScreen */,
+				CE1C52F22D15A57200E7F5EB /* MainScreen */,
+				CE1C52F62D15A57200E7F5EB /* PlaylistByGenreScreen */,
+				CE1C52FA2D15A57200E7F5EB /* PlaylistDeleteScreen */,
+				CE1C52FE2D15A57200E7F5EB /* PlaylistModesScreen */,
+				CE1C53022D15A57200E7F5EB /* PlaylistMoveDeleteScreen */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		CE1C52E22D15A52E00E7F5EB /* Json */ = {
+			isa = PBXGroup;
+			children = (
+				CE1C52E32D15A54500E7F5EB /* Playlist.json */,
+			);
+			path = Json;
+			sourceTree = "<group>";
+		};
+		CE1C52E82D15A57200E7F5EB /* InitialScreen */ = {
+			isa = PBXGroup;
+			children = (
+				CE1C52E52D15A57200E7F5EB /* InitialModel.swift */,
+				CE1C52E62D15A57200E7F5EB /* InitialView.swift */,
+				CE1C52E72D15A57200E7F5EB /* InitialViewController.swift */,
+			);
+			path = InitialScreen;
+			sourceTree = "<group>";
+		};
+		CE1C52EC2D15A57200E7F5EB /* MainPlaylistScreen */ = {
+			isa = PBXGroup;
+			children = (
+				CE1C52E92D15A57200E7F5EB /* MainPlaylistModel.swift */,
+				CE1C52EA2D15A57200E7F5EB /* MainPlaylistView.swift */,
+				CE1C52EB2D15A57200E7F5EB /* MainPlaylistViewController.swift */,
+			);
+			path = MainPlaylistScreen;
+			sourceTree = "<group>";
+		};
+		CE1C52EE2D15A57200E7F5EB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CE1C52ED2D15A57200E7F5EB /* TaskItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CE1C52F22D15A57200E7F5EB /* MainScreen */ = {
+			isa = PBXGroup;
+			children = (
+				CE1C52EE2D15A57200E7F5EB /* Models */,
+				CE1C52EF2D15A57200E7F5EB /* MainModel.swift */,
+				CE1C52F02D15A57200E7F5EB /* MainView.swift */,
+				CE1C52F12D15A57200E7F5EB /* MainViewController.swift */,
+			);
+			path = MainScreen;
+			sourceTree = "<group>";
+		};
+		CE1C52F62D15A57200E7F5EB /* PlaylistByGenreScreen */ = {
+			isa = PBXGroup;
+			children = (
+				CE1C52F32D15A57200E7F5EB /* PlaylistByGenreModel.swift */,
+				CE1C52F42D15A57200E7F5EB /* PlaylistByGenreView.swift */,
+				CE1C52F52D15A57200E7F5EB /* PlaylistByGenreViewController.swift */,
+			);
+			path = PlaylistByGenreScreen;
+			sourceTree = "<group>";
+		};
+		CE1C52FA2D15A57200E7F5EB /* PlaylistDeleteScreen */ = {
+			isa = PBXGroup;
+			children = (
+				CE1C52F72D15A57200E7F5EB /* PlaylistDeleteModel.swift */,
+				CE1C52F82D15A57200E7F5EB /* PlaylistDeleteView.swift */,
+				CE1C52F92D15A57200E7F5EB /* PlaylistDeleteViewController.swift */,
+			);
+			path = PlaylistDeleteScreen;
+			sourceTree = "<group>";
+		};
+		CE1C52FE2D15A57200E7F5EB /* PlaylistModesScreen */ = {
+			isa = PBXGroup;
+			children = (
+				CE1C52FB2D15A57200E7F5EB /* PlaylistModesModel.swift */,
+				CE1C52FC2D15A57200E7F5EB /* PlaylistModesView.swift */,
+				CE1C52FD2D15A57200E7F5EB /* PlaylistModesViewController.swift */,
+			);
+			path = PlaylistModesScreen;
+			sourceTree = "<group>";
+		};
+		CE1C53022D15A57200E7F5EB /* PlaylistMoveDeleteScreen */ = {
+			isa = PBXGroup;
+			children = (
+				CE1C52FF2D15A57200E7F5EB /* PlaylistMoveDeleteModel.swift */,
+				CE1C53002D15A57200E7F5EB /* PlaylistMoveDeleteView.swift */,
+				CE1C53012D15A57200E7F5EB /* PlaylistMoveDeleteViewController.swift */,
+			);
+			path = PlaylistMoveDeleteScreen;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE1C52A62D15A35F00E7F5EB /* HomeWork10UK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE1C52BA2D15A36100E7F5EB /* Build configuration list for PBXNativeTarget "HomeWork10UK" */;
+			buildPhases = (
+				CE1C52A32D15A35F00E7F5EB /* Sources */,
+				CE1C52A42D15A35F00E7F5EB /* Frameworks */,
+				CE1C52A52D15A35F00E7F5EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HomeWork10UK;
+			packageProductDependencies = (
+			);
+			productName = HomeWork10UK;
+			productReference = CE1C52A72D15A35F00E7F5EB /* HomeWork10UK.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE1C529F2D15A35F00E7F5EB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					CE1C52A62D15A35F00E7F5EB = {
+						CreatedOnToolsVersion = 16.2;
+					};
+				};
+			};
+			buildConfigurationList = CE1C52A22D15A35F00E7F5EB /* Build configuration list for PBXProject "HomeWork10UK" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CE1C529E2D15A35F00E7F5EB;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = CE1C52A82D15A35F00E7F5EB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE1C52A62D15A35F00E7F5EB /* HomeWork10UK */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE1C52A52D15A35F00E7F5EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE1C52CC2D15A36800E7F5EB /* Assets.xcassets in Resources */,
+				CE1C52CE2D15A36800E7F5EB /* LaunchScreen.storyboard in Resources */,
+				CE1C52CF2D15A36800E7F5EB /* Main.storyboard in Resources */,
+				CE1C52E42D15A54500E7F5EB /* Playlist.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE1C52A32D15A35F00E7F5EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE1C52C92D15A36800E7F5EB /* AppDelegate.swift in Sources */,
+				CE1C52E02D15A4D600E7F5EB /* DataLoaderService.swift in Sources */,
+				CE1C52DB2D15A4A400E7F5EB /* UIView+Identifier.swift in Sources */,
+				CE1C53032D15A57200E7F5EB /* PlaylistModesView.swift in Sources */,
+				CE1C53042D15A57200E7F5EB /* PlaylistMoveDeleteView.swift in Sources */,
+				CE1C53052D15A57200E7F5EB /* MainViewController.swift in Sources */,
+				CE1C53062D15A57200E7F5EB /* PlaylistDeleteView.swift in Sources */,
+				CE1C53072D15A57200E7F5EB /* PlaylistByGenreView.swift in Sources */,
+				CE1C53082D15A57200E7F5EB /* InitialViewController.swift in Sources */,
+				CE1C53092D15A57200E7F5EB /* MainPlaylistModel.swift in Sources */,
+				CE1C530A2D15A57200E7F5EB /* PlaylistDeleteModel.swift in Sources */,
+				CE1C530B2D15A57200E7F5EB /* PlaylistDeleteViewController.swift in Sources */,
+				CE1C530C2D15A57200E7F5EB /* MainView.swift in Sources */,
+				CE1C530D2D15A57200E7F5EB /* InitialView.swift in Sources */,
+				CE1C530E2D15A57200E7F5EB /* PlaylistModesModel.swift in Sources */,
+				CE1C530F2D15A57200E7F5EB /* PlaylistMoveDeleteModel.swift in Sources */,
+				CE1C53102D15A57200E7F5EB /* MainPlaylistViewController.swift in Sources */,
+				CE1C53112D15A57200E7F5EB /* InitialModel.swift in Sources */,
+				CE1C53122D15A57200E7F5EB /* PlaylistByGenreModel.swift in Sources */,
+				CE1C53132D15A57200E7F5EB /* TaskItem.swift in Sources */,
+				CE1C53142D15A57200E7F5EB /* PlaylistMoveDeleteViewController.swift in Sources */,
+				CE1C53152D15A57200E7F5EB /* MainModel.swift in Sources */,
+				CE1C53162D15A57200E7F5EB /* PlaylistModesViewController.swift in Sources */,
+				CE1C53172D15A57200E7F5EB /* MainPlaylistView.swift in Sources */,
+				CE1C53182D15A57200E7F5EB /* PlaylistByGenreViewController.swift in Sources */,
+				CE1C52CA2D15A36800E7F5EB /* SceneDelegate.swift in Sources */,
+				CE1C52D82D15A47400E7F5EB /* Playlist.swift in Sources */,
+				CE1C52DD2D15A4B400E7F5EB /* UIViewController+Storyboard.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CE1C52C32D15A36800E7F5EB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE1C52C22D15A36800E7F5EB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		CE1C52C52D15A36800E7F5EB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE1C52C42D15A36800E7F5EB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CE1C52BB2D15A36100E7F5EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 68L5Z63PKU;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HomeWork10UK/Resource/Plist/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Vint-Rock.HomeWork10UK";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CE1C52BC2D15A36100E7F5EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 68L5Z63PKU;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HomeWork10UK/Resource/Plist/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Vint-Rock.HomeWork10UK";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CE1C52BD2D15A36100E7F5EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CE1C52BE2D15A36100E7F5EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE1C52A22D15A35F00E7F5EB /* Build configuration list for PBXProject "HomeWork10UK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE1C52BD2D15A36100E7F5EB /* Debug */,
+				CE1C52BE2D15A36100E7F5EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE1C52BA2D15A36100E7F5EB /* Build configuration list for PBXNativeTarget "HomeWork10UK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE1C52BB2D15A36100E7F5EB /* Debug */,
+				CE1C52BC2D15A36100E7F5EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CE1C529F2D15A35F00E7F5EB /* Project object */;
+}
