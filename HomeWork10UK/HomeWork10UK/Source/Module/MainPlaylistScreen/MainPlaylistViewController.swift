@@ -54,8 +54,13 @@ extension MainPlaylistViewController: UITableViewDataSource {
             return UITableViewCell()
         }
         
-        cell.textLabel?.text = model.items[indexPath.row].songTitle
-        
+        //cell.textLabel?.text = model.items[indexPath.row].songTitle
+        if let label1 = cell.viewWithTag(1) as? UILabel,
+            let label2 = cell.viewWithTag(2) as? UILabel {
+            label1.text = model.items[indexPath.row].author
+            label2.text = model.items[indexPath.row].songTitle
+            }
+                
         return cell
     }
 }
